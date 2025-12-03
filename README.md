@@ -1,9 +1,14 @@
--To run:
+## Cài đặt
+Chạy file server
+```bash
 cd server
-npm install 
+npm i
 npm run dev
-
-
-cd client
-npm install
+```
+Chạy file client
+```bash
+cd server
+npm i
 npm run dev
+```
+
