@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <form action="/edit-user" class="form" method="post">
+      <fieldset>
+        <legend>Form add new users</legend>
+        <input type="text" value="<%=user.id %>" name="id" hidden />
+        <div class="form__group">
+          <label for="">
+            Email:
+            <input type="text" name="email" value="<%=user.email %>" />
+          </label>
+        </div>
+        <div class="form__group">
+          <label for="">
+            Name:
+            <input type="text" name="name" value="<%=user.name %>" />
+          </label>
+        </div>
+        <div class="form__group">
+          <label for="">
+            City:
+            <input type="text" name="city" value="<%=user.city %>" />
+          </label>
+        </div>
+        <button>Save</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
